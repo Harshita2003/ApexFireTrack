@@ -1,0 +1,37 @@
+---
+- # ====== Automation: AUTO MAIL SEND ==========================
+  id: 14441957934906869968
+  identification: 
+    name: AUTO MAIL SEND
+    static-id: auto-mail-send
+
+  execution: 
+    type: Scheduled
+    schedule-expression: FREQ=DAILY;INTERVAL=1;BYHOUR=6;BYMINUTE=0
+    schedule-status: Disabled
+    actions-initiated-on: Always
+
+  action-execution: 
+    action-error-handling: Ignore
+
+  actions: 
+  - # ====== Action: New Action ==================================
+    id: 14441958244000869971
+    identification: 
+      name: New Action
+      type: Execute Code
+
+    source: 
+      location: Local Database
+      language: PL/SQL
+      pl/sql-code: |
+        begin
+            PM_MAINTENANCE_EMAIL_PROC;
+        end;
+
+    execution: 
+      sequence: 10
+
+    error: 
+      stop-execution-on-error: true
+
