@@ -43,3 +43,7 @@ Email Logic – PL/SQL-based email automation setup.
 🎯 Project Impact
 
 This system removes manual dependency in scheduling maintenance for fire extinguishers, ensuring timely servicing and regulatory compliance. With zero human intervention, maintenance tracking is now fully automated, helping organizations maintain safety standards without delays or errors.
+
+🔗 Access the Project
+
+📌 Check out the full project:[GitHub Repository](https://apex.oracle.com/pls/apex/r/renusagar/fire-extinguisher/home)
